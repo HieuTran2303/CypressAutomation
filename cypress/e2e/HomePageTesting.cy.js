@@ -4,7 +4,7 @@ describe('Elements Testing', () => {
   it('should be clickable elements menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.elementsMenuSelector()).click(); // Click on the Elements menu
+    homePage.elementsMenuClick();
     cy.log('Elements menu clicked successfully'); // Log message to console
   });
 });
@@ -13,7 +13,7 @@ describe('Forms Testing', () => {
   it('should be clickable forms menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.formsMenuSelector()).click(); // Click on the Forms menu
+    homePage.formsMenuClick();
     cy.log('Forms menu clicked successfully'); // Log message to console
   });
 });
@@ -22,7 +22,7 @@ describe('Alerts, Frame & Windows Testing', () => {
   it('should be clickable alerts, frame & windows menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.alertsFrameWindowsMenuSelector()).click(); // Click on the Alerts, Frame & Windows menu
+    homePage.alertsFrameWindowsMenuClick();
     cy.log('Alerts, Frame & Windows menu clicked successfully'); // Log message to console
   });
 });
@@ -31,7 +31,7 @@ describe('Widgets Testing', () => {
   it('should be clickable widgets menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.widgetsMenuSelector()).click(); // Click on the Widgets menu
+    homePage.widgetsMenuClick();
     cy.log('Widgets menu clicked successfully'); // Log message to console
   });
 });
@@ -40,7 +40,7 @@ describe('Interactions Testing', () => {
   it('should be clickable interactions menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.interactionsMenuSelector()).click(); // Click on the Interactions menu
+    homePage.interactionsMenuClick();
     cy.log('Interactions menu clicked successfully'); // Log message to console
   });
 });
@@ -49,7 +49,7 @@ describe('Book Store Application Testing', () => {
   it('should be clickable book store application menu', () => {
     cy.visit('https://demoqa.com/');  // URL test
     const homePage = new HomePage();
-    cy.get(homePage.bookStoreApplicationMenuSelector()).click(); // Click on the Book Store Application menu
+    homePage.bookStoreApplicationMenuClick();
     cy.log('Book Store Application menu clicked successfully'); // Log message to console
   });
 });

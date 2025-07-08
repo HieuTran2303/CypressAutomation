@@ -10,27 +10,27 @@ class HomePage {
 
   // Method to click on the Elements menu
   elementsMenuClick() {
-    cy.get(this.elementsMenuSelector).click(); // Click on the Elements menu
+    cy.get(this.elementsMenuSelector).should('be.visible').click(); // Click on the Elements menu
   }
   // Method to click on the Forms menu
   formsMenuClick() {
-    cy.get(this.formsMenuSelector).click(); // Click on the Forms menu
+    cy.get(this.formsMenuSelector).should('be.visible').click(); // Click on the Forms menu
   }
   // Method to click on the Alerts, Frame & Windows menu
   alertsFrameWindowsMenuClick() {
-    cy.get(this.alertsFrameWindowsMenuSelector).click(); // Click on the Alerts, Frame & Windows menu
+    cy.get(this.alertsFrameWindowsMenuSelector).should('be.visible').click(); // Click on the Alerts, Frame & Windows menu
   }
   // Method to click on the Widgets menu
   widgetsMenuClick() {
-    cy.get(this.widgetsMenuSelector).click(); // Click on the Widgets menu
+    cy.get(this.widgetsMenuSelector).should('be.visible').click(); // Click on the Widgets menu
   }
   // Method to click on the Interactions menu
   interactionsMenuClick() {
-    cy.get(this.interactionsMenuSelector).click(); // Click on the Interactions menu
+    cy.get(this.interactionsMenuSelector).should('be.visible').click(); // Click on the Interactions menu
   }
   // Method to click on the Book Store Application menu
   bookStoreApplicationMenuClick() {
-    cy.get(this.bookStoreApplicationMenuSelector).click(); // Click on the Book Store Application menu
+    cy.get(this.bookStoreApplicationMenuSelector).should('be.visible').click(); // Click on the Book Store Application menu
   }
 }
 export default HomePage;

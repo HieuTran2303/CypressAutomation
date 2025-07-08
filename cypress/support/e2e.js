@@ -21,3 +21,4 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   console.log('Uncaught Exception:', err.message)
   return false // Kệ nó, đừng fail test
 })
+import 'cypress-mochawesome-reporter/register'
