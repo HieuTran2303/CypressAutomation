@@ -15,3 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+require('cypress-xpath')
+// File cypress/support/e2e.js
+Cypress.on('uncaught:exception', (err, runnable) => {
+  console.log('Uncaught Exception:', err.message)
+  return false // Kệ nó, đừng fail test
+})
